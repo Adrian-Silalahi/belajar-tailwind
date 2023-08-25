@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+            fontFamily: {
+              inter: ["Inter"],
+            },
+            colors: {
+              biru: "#0D35C2",
+              merah: "#FF0800",
+              ping: "#ED12AF",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Coba Tailwind</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body * {
+        /* border: 1px solid red; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-8xl font-bold text-center my-10 bg-gradient-to-br from-merah via-ping to-biru bg-clip-text text-transparent">Mari Belajar TailwindCSS</h1>
+    <section class="mb-10 bg-indigo-200">
+      <h2 class="text-center text-3xl">Spacing</h2>
+      <div class="m-13 bg-red-200">Margin</div>
+      <div class="py-8 bg-red-200">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-200">
+      <h2 class="text-3xl text-center">Sizing</h2>
+      <div class="w-32 h-32 bg-yellow-200">Kotak 1</div>
+    </section>
+
+    <section class="font-inter max-w-3xl mx-auto">
+      <h2 class="mb-2 text-4xl font-bold">Belajar Mengenai Typography pada TilwindCSS</h2>
+      <div class="mb-4 text-lg text-gray-500">By <a href="#" class="font-semibold text-gray-700">Adrianus</a> Silalahi, 21 Agustus 2023</div>
+      <p class="mb-4">
+        Lorem ipsum dolor sit, amet <a href="#" class="underline font-semibold text-blue-600">consectetur</a> adipisicing elit. Voluptate illum ex, quo ratione labore quidem optio pariatur consequuntur dicta excepturi. Et, dolores
+        voluptatibus nisi dignissimos voluptates accusamus laborum asperiores, modi alias quis repellendus quia ratione at dolor nobis recusandae illum similique inventore iusto quisquam a architecto! Et reiciendis vitae impedit!
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque iure veniam tempora optio est possimus minus harum nostrum in."</blockquote>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, id porro eos in dolore consectetur, incidunt voluptatem minus non assumenda quia vel provident tenetur. Minus temporibus eveniet eligendi! Suscipit, itaque.
+      </p>
+    </section>
+
+    <!-- <div class="max-w-5xl h-96 bg-slate-300 mx-auto mt-[42px] overflow-y-scroll bg-fixed bg-cover bg-center flex ]" style="background-image: url('./img/2.jpg'); filter: brightness(60%)">
+      <p class="p-5 text-2xl flex m-auto font-serif font-medium text-white">Belajar tailwind menyenangkan!</p>
+    </div> -->
+    <div class="max-w-5xl h-96 shadow-2xl mx-auto mt-[42px] relative">
+      <div class="absolute inset-0 h-full w-full object-cover bg-fixed bg-cover bg-center brightness-[.45]" style="background-image: url('./img/2.jpg')"></div>
+      <div class="flex h-full items-center justify-center relative">
+        <h1 class="text-3xl text-white font-medium font-inter tracking-wider">Belajar tailwind menyenangkan!</h1>
+      </div>
+    </div>
+
+    <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-cover rounded-2xl shadow-2xl shadow-slate-500 hover:blur-none border-8 overflow-hidden flex" style="background-image: url('./img/1.jpg')">
+      <div class="w-[200px] h-[200px] bg-white/30 m-auto backdrop-blur-sm rounded-full"></div>
+    </div>
+
+    <button class="text-white font-semibold font-inter block mx-auto bg-purple-500 rounded-full my-20 py-[4px] px-[14px] hover:bg-purple-600 active:bg-purple-700 focus:ring focus:ring-purple-100">Simpan</button>
+    <hr class="my-20" />
+
+    <div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:shadow-sky-200">
+      <h5 class="text-sky-400 font-semibold mb-3">My Card</h5>
+      <p class="text-slate-600">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit aliquam sequi inventore quaerat consequatur perspiciatis praesentium iure nesciunt. Expedita animi velit ratione nihil voluptatem, ab iure porro? Quod,
+        temporibus mollitia.
+      </p>
+    </div>
+
+    <div class="mb-96"></div>
+  </body>
+</html>
